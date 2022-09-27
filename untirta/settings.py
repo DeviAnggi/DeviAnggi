@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'feb',
     'fk',
     'fisip',
+    'faperta',
+    'ft',
+    'pascasarjana',
+    'univ',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +70,10 @@ TEMPLATES = [
             'feb/templates',
             'fk/templates',
             'fisip/templates',
+            'faperta/templates',
+            'ft/templates',
+            'pascasarjana/templates',
+            'univ/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
