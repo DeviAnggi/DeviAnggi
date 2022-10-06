@@ -1,64 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <title>FT</title>
-    </head>
-    <body>
-        <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img src="https://untirta.ac.id/wp-content/uploads/2020/05/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top" />
-            UNTIRTA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Profil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help Desk</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kemahasiswaan</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Fakultas
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/fh">Fakultas Hukum</a></li>
-                  <li><a class="dropdown-item" href="/fkip">Fakultas Keguruan dan Ilmu Pendidikan</a></li>
-                  <li><a class="dropdown-item" href="#">Fakultas Teknik</a></li>
-                  <li><a class="dropdown-item" href="/faperta">Fakultas Pertanian</a></li>
-                  <li><a class="dropdown-item" href="/feb">Fakultas Ekomomi dan Bisnis</a></li>
-                  <li><a class="dropdown-item" href="/fisip">Fakultas Ilmu Sosial dan Ilmu Politik</a></li>
-                  <li><a class="dropdown-item" href="/fk">Fakultas Kedokteran</a></li>
-                  <li><a class="dropdown-item" href="/pascasarjana">Pascasarjana</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!--Akhir Navbar-->
-        <h1>FAKULTAS TEKNIK</h1>
-        <p>Jurusan Tersedia:</p>
-        <ul>
-            <li>Teknik Elektro</li>
-            <li>Teknik Industri</li>
-            <li>Teknik Kimia</li>
-            <li>Teknik Mesin</li>
-            <li>Teknik Metalurgi</li>
-            <li>Teknik Sipil</li>
-        </ul>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(38, 79, 45);">FAKULTAS TEKNIK</h2>  
+    </center>
+    <center>
+        <img src="{% static 'image/ft.png' %}" alt="foto" width="300px">
+    </center>
+    <center>
+        <h4 style="background-color: rgba(135, 30, 30, 0.568) ;">SEJARAH FAKULTAS TEKNIK</h4>
+    </center>
+    <p style="font-family: 'times new roman'">Fakultas Teknik Untirta merupakan salah satu fakultas yang menjadi cikal bakal berdirinya Untirta. Lahirnya Fakultas Teknik berawal dari gagasan jajaran direksi dan manajemen PT. Krakatau Steel (Bapak Ir. Djoko Subagyo dan Team). Fakultas Teknik terlahir sebagai wujud cita-cita masyarakat, ulama, cendekiawan dan para pemimpin se-wilayah Banten serta dengan dukungan PT. Krakatau Steel dan industri petrokimia di kawasan industri Cilegon.</p>
+    <p style="font-family: 'times new roman'">Berdirinya Fakultas Teknik diawali dengan berdirinya Sekolah Tinggi Teknologi yang didirikan oleh PT. Krakatau Steel pada tahun 1982 dengan ijin penyelenggaraan untuk tingkat Sarjana Muda (Non Gelar) dari Kopertis Wilayah IV Jawa Barat Nomor: 040/1982. Kemudian pada tahun 1984 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan RI Nomor: 0596/O/1984, Sekolah Tinggi Teknologi menggabungkan diri ke dalam Universitas Tirtayasa Banten.</p>
+    <p style="font-family: 'times new roman'">Selanjutnya pada tanggal 13 Oktober 1999 keluar Keputusan Presiden Republik Indonesia No. 130 tentang Persiapan Pendirian Universitas Negeri Sultan Ageng Tirtayasa. Dengan keluarnya Surat Keputusan Presiden Republik Indonesia Nomor 32 tanggal 19 Maret tahun 2001 maka Universitas Sultan Ageng Tirtayasa yang menaungi Fakultas Teknik menjadi Perguruan Tinggi Negeri di lingkungan Departemen Pendidikan Nasional. Sesuai dengan peralihan status Universitas Tirtayasa (semula swasta) menjadi Universitas Sultan Ageng Tirtayasa dengan status sebagai Perguruan Tinggi Negeri (PTN) di lingkungan Depdiknas, maka pola pengelolaan kelembagaan secara otomatis mengikuti semua ketentuan dari Departemen Pendidikan Nasional.</p>
+    <center>
+        <h4 style="background-color: rgba(23, 26, 177, 0.43);">PROGRAM STUDI</h4>
+    </center>
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+    {% for judul in jdl %}
+    <li>{{ judul }}</li>
+{% endfor %}
+</p>
+<h2>Daftar Nama Dosen Ft</h2>
+<table class="table table-success table-striped">
+    <tr>
+        <th>NIP</th>
+        <th>Nama</th>
+        <th>Tanggal Lahir</th>
+        <th>Email</th>
+        <th>Fakultas</th>
+        <th>Prodi</th>
+        <th>Alamat</th>
+        <th>Foto</th>
+    </tr>
+    {% for dosen in dataDosen %}
+    <tr>
+        <td>{{ dosen.NIP }}</td>
+        <td>{{ dosen.nama }}</td>
+        <td>{{ dosen.tanggal_lahir }}</td>
+        <td>{{ dosen.email }}</td>
+        <td>{{ dosen.fakultas }}</td>
+        <td>{{ dosen.prodi }}</td>
+        <td>{{ dosen.alamat }}</td>
+        <td><img src="{{ dosen.foto }}" alt="Foto" width="100px"></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Daftar Nama Mahasiswa Ft</h2>
+<table class="table table-success table-striped">
+    <tr>
+        <th>NIM</th>
+        <th>Nama</th>
+        <th>Tanggal Lahir</th>
+        <th>Email</th>
+        <th>Fakultas</th>
+        <th>Prodi</th>
+        <th>Foto</th>
+    </tr>
+    {% for mahasiswa in dataMahasiswa %}
+    <tr>
+        <td>{{ mahasiswa.NIM }}</td>
+        <td>{{ mahasiswa.nama }}</td>
+        <td>{{ mahasiswa.tanggal_lahir }}</td>
+        <td>{{ mahasiswa.email }}</td>
+        <td>{{ mahasiswa.fakultas }}</td>
+        <td>{{ mahasiswa.prodi }}</td>
+        <td><img src="{{ mahasiswa.foto }}" alt="Foto" width="100px"></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Daftar Nama Staff Ft</h2>
+<table class="table table-success table-striped">
+    <tr>
+        <th>NIP</th>
+        <th>Nama</th>
+        <th>Tanggal Lahir</th>
+        <th>Email</th>
+        <th>Unit</th>
+        <th>Alamat</th>
+        <th>Foto</th>
+    </tr>
+    {% for mahasiswa in dataMahasiswa %}
+    <tr>
+        <td>{{ staff.NIM }}</td>
+        <td>{{ staff.nama }}</td>
+        <td>{{ staff.tanggal_lahir }}</td>
+        <td>{{ staff.email }}</td>
+        <td>{{ staff.unit }}</td>
+        <td>{{ staff.alamat }}</td>
+        <td>{{ staff.foto }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
