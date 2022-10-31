@@ -11,12 +11,12 @@
             {% if pesan %}
             <div class="alert alert-success">{{ pesan }}</div>
             {% endif %}
-            <form action="/tambah-staff/" method="post">
+            <form action="/tambah-mahasiswa/" method="post">
             {% csrf_token %}
 
                 {{ form.as_p }}
                 
-                <button class="btn btn-primary">Tambah Dosen</button>
+                <button class="btn btn-primary">Tambah Mahasiswa</button>
                 
             </form>
         </div>

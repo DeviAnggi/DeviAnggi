@@ -1,13 +1,13 @@
 from django.forms import ModelForm
-from faperta.models import Dosen
-from faperta.models import Staff
-from faperta.models import Mahasiswa
+from fkip.models import Dosen
+from fkip.models import Staff
+from fkip.models import Mahasiswa
 from django import forms
 
 class FormDosen(ModelForm):
     class Meta:
         model = Dosen
-        fields = '_all_'
+        fields = '__all__'
 
         widgets = {
             'NIP' : forms.NumberInput({'class':'form-control'}),
@@ -23,7 +23,7 @@ class FormDosen(ModelForm):
 class FormStaff(ModelForm):
     class Meta:
         model = Staff
-        fields = '_all_'
+        fields = '__all__'
 
         widgets = {
             'Nama' : forms.NumberInput({'class':'form-control'}),
@@ -38,7 +38,7 @@ class FormStaff(ModelForm):
 class FormMahasiswa(ModelForm):
     class Meta:
         model = Mahasiswa
-        fields = '_all_'
+        fields = '__all__'
 
         widgets = {
             'NIM' : forms.NumberInput({'class':'form-control'}),
